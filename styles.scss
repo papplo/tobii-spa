@@ -1,0 +1,50 @@
+html {
+font-size: 13px;
+}
+
+body {
+  font-family: Monaco, Consolas, Courier, monospace;
+  font-size: 1em;
+  line-height: 1.8em;
+  color: #8DA1BD;
+  background: #141721;
+  padding: 30px;
+  //max-width: 45em;
+}
+
+a {
+  color: #AEF23C;
+  text-decoration: none;
+
+  &:hover {
+    color: #FBD329;
+  }
+}
+
+p {
+    margin: .2em 0;
+    & + p {
+    text-indent: 40px;
+    }
+}
+
+article {}
+
+section {
+
+  .games-grid {
+    display: flex;
+    align-items: flex-start;
+
+    .grid-cell {
+      flex: 1;
+    }
+
+    img {
+      margin-right: 1em;
+
+    }
+
+  }
+
+}
