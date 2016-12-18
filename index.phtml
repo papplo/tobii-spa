@@ -26,7 +26,7 @@ Reply us with the result in a zip file and how to run your code. Feel free to di
 
 <!-- Grid based on html and css -->
 
-<article>
+<!--<article class="h33">
   <header>
     <p>hello world of gaming </p>
     <p>Inbox is an awesome new email client from the Gmail team. I’ve had the pleasure of test-driving this for a few months, and I have to say: It’s an incredibly well-polished app with a very smart set of features.</p>
@@ -35,18 +35,35 @@ Reply us with the result in a zip file and how to run your code. Feel free to di
     <p>Really tremendous work and a huge congrats to all my colleagues that took part in shipping this.</p>
   </header>
 </article>
-
-<section class="games-grid">
-  <img src="https://tobiigaming.com/wp-content/uploads/2016/10/WD2_Thumb.jpg" title="Game-Title" class="grid-cell fp shooter free new" >
-  <img src="https://tobiigaming.com/wp-content/uploads/2016/11/SteepThumbnail.jpg" title="Game-Title" class="grid-cell fp shooter free new" >
-  <img src="assets/img/Games_Thumbnails_Division-1.jpg"  title="Game-Title" class="grid-cell fp shooter free new" >
-  <img src="assets/img/ACSThumb169.png"  title="Game-Title" class="grid-cell fp shooter free new" >
-
-  <img src="assets/img/ElitDangerousThumbnail.png"  title="Game-Title" class="grid-cell fp shooter free new" >
-  <img src="assets/img/DX_thumb620.jpg"  title="Game-Title" class="grid-cell fp shooter free new" >
-  <img src="https://tobiigaming.com/wp-content/uploads/2016/10/Games_Thumbnails_SolusProject169.jpg" title="Game-Title" class="grid-cell fp shooter free new"  >
-  <img src="assets/img/FarmingSimulator_thumb.jpg" title="Game-Title" class="grid-cell fp shooter free new"  >
-  <img src="https://tobiigaming.com/wp-content/uploads/2016/10/Pollen-capsule_main-featureimage.png"  title="Game-Title" class="grid-cell fp shooter free new" >
+-->
+<section class="games_grid">
+  <div class="grid_cell h33">
+    <img src="assets/img/WD2_Thumb.jpg" title="Game-Title" class="fp shooter free new" >
+  </div>
+  <div class="grid_cell h33">
+    <img src="assets/img/SteepThumbnail.jpg" title="Game-Title" class="fp shooter free new" >
+  </div>
+  <div class="grid_cell h33">
+    <img src="assets/img/Games_Thumbnails_Division-1.jpg"  title="Game-Title" class="fp shooter free new" >
+  </div>
+  <div class="grid_cell h33">
+    <img src="assets/img/ACSThumb169.png"  title="Game-Title" class="fp shooter free new" >
+  </div>
+  <div class="grid_cell h33">
+    <img src="assets/img/ElitDangerousThumbnail.png"  title="Game-Title" class="fp shooter free new" >
+  </div>
+  <div class="grid_cell h33">
+    <img src="assets/img/DX_thumb620.jpg"  title="Game-Title" class="fp shooter free new" >
+  </div>
+  <div class="grid_cell h33">
+    <img src="assets/img/Games_Thumbnails_SolusProject169.jpg" title="Game-Title" class="fp shooter free new"  >
+  </div>
+  <div class="grid_cell h33">
+    <img src="assets/img/FarmingSimulator_thumb.jpg" title="Game-Title" class="fp shooter free new"  >
+  </div>
+  <div class="grid_cell h33">
+    <img src="assets/img/Pollen-capsule_main-featureimage.png"  title="Game-Title" class="fp shooter free new" >
+  </div>
 </section>
 
 
@@ -56,4 +73,13 @@ Reply us with the result in a zip file and how to run your code. Feel free to di
 
 
 </body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+$('.grid_cell img').each(function() {
+    cap = '<caption>'+ $(this).attr('title')+'</caption>';
+    $(this).after( cap );
+});
+</script>
+
 </html>
