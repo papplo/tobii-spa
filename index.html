@@ -23,46 +23,45 @@ Reply us with the result in a zip file and how to run your code. Feel free to di
 
 -->
 
+<!-- Search -->
+<section>
+  <form>
+    <input id="search_input" type="text" name="search" class="awesomplete" data-list="fp, shooter, free, adventure, sneaker, platform, gravity, reality, space, immersive, 3d, new" /></input>
 
-<!-- Grid based on html and css -->
 
-<!--<article class="h33">
-  <header>
-    <p>hello world of gaming </p>
-    <p>Inbox is an awesome new email client from the Gmail team. I’ve had the pleasure of test-driving this for a few months, and I have to say: It’s an incredibly well-polished app with a very smart set of features.</p>
-    <p>It combines everything I like about Gmail, Mail.app, and Mailbox app, removes the features I don’t use, and absolutely shines as an example of Material Design.</p>
-    <p>I also love the fact that Google’s not just positioning it as “The Next Gmail,” but rather as an all new product—and it looks like it will be supporting a variety of other email services as well.</p>
-    <p>Really tremendous work and a huge congrats to all my colleagues that took part in shipping this.</p>
-  </header>
-</article>
--->
+  </form>
+
+</section>
+
+<!-- Grid based on flexbox -->
+
 <section class="games_grid">
-  <div class="grid_cell h33">
-    <img src="assets/img/WD2_Thumb.jpg" title="Game-Title" class="fp shooter free new" >
+  <div class="grid_cell ">
+    <img src="assets/img/WD2_Thumb.jpg" title="Watch Dogs 2" class="fp shooter new" >
   </div>
-  <div class="grid_cell h33">
-    <img src="assets/img/SteepThumbnail.jpg" title="Game-Title" class="fp shooter free new" >
+  <div class="grid_cell ">
+    <img src="assets/img/SteepThumbnail.jpg" title="Steep" class="fp adventure new" >
   </div>
-  <div class="grid_cell h33">
-    <img src="assets/img/Games_Thumbnails_Division-1.jpg"  title="Game-Title" class="fp shooter free new" >
+  <div class="grid_cell ">
+    <img src="assets/img/Games_Thumbnails_Division-1.jpg"  title="The Division" class="fp shooter free" >
   </div>
-  <div class="grid_cell h33">
-    <img src="assets/img/ACSThumb169.png"  title="Game-Title" class="fp shooter free new" >
+  <div class="grid_cell ">
+    <img src="assets/img/ACSThumb169.png"  title="Assasins Creed" class="fp sneaker free" >
   </div>
-  <div class="grid_cell h33">
-    <img src="assets/img/ElitDangerousThumbnail.png"  title="Game-Title" class="fp shooter free new" >
+  <div class="grid_cell ">
+    <img src="assets/img/ElitDangerousThumbnail.png"  title="Elite Dangerous" class="platform shooter free" >
   </div>
-  <div class="grid_cell h33">
-    <img src="assets/img/DX_thumb620.jpg"  title="Game-Title" class="fp shooter free new" >
+  <div class="grid_cell ">
+    <img src="assets/img/DX_thumb620.jpg"  title="Deus Ex" class="platform shooter new" >
   </div>
-  <div class="grid_cell h33">
-    <img src="assets/img/Games_Thumbnails_SolusProject169.jpg" title="Game-Title" class="fp shooter free new"  >
+  <div class="grid_cell ">
+    <img src="assets/img/Games_Thumbnails_SolusProject169.jpg" title="Solus Project" class="gravity 3d space new"  >
   </div>
-  <div class="grid_cell h33">
-    <img src="assets/img/FarmingSimulator_thumb.jpg" title="Game-Title" class="fp shooter free new"  >
+  <div class="grid_cell ">
+    <img src="assets/img/FarmingSimulator_thumb.jpg" title="Farming Simulator" class="fp reality immersive"  >
   </div>
-  <div class="grid_cell h33">
-    <img src="assets/img/Pollen-capsule_main-featureimage.png"  title="Game-Title" class="fp shooter free new" >
+  <div class="grid_cell ">
+    <img src="assets/img/Pollen-capsule_main-featureimage.png"  title="Pollen" class="fp immersive new" >
   </div>
 </section>
 
@@ -74,12 +73,22 @@ Reply us with the result in a zip file and how to run your code. Feel free to di
 
 </body>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
+<script src="assets/vendor/awesomplete.js" async></script>
 <script type="text/javascript">
+
+// Create caption and tags from <img> attributes
 $('.grid_cell img').each(function() {
-    cap = '<caption>'+ $(this).attr('title')+'</caption>';
+    tags = '<span class="tag">'+ $(this).attr('class') + '</span>';
+    cap = '<div class="caption">'+ $(this).attr('title') + tags +'</div>';
     $(this).after( cap );
 });
+
+// Search/filter grid images based on their classes, todo: reset filtering
+$('input.awesomplete').on('awesomplete-selectcomplete',function(e){
+    tag_class = (this.value);
+    $('.grid_cell .' + tag_class).parent().fadeToggle("fast");
+});
 </script>
+
 
 </html>

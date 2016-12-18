@@ -81,6 +81,519 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/assets\/vendor\/.codeclimate.yml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/vendor\/.codeclimate.yml",
+		"oF": 0
+		},
+	"\/assets\/vendor\/.eslintrc": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/vendor\/.eslintrc",
+		"oF": 0
+		},
+	"\/assets\/vendor\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/vendor\/.gitignore",
+		"oF": 0
+		},
+	"\/assets\/vendor\/.travis.yml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/vendor\/.travis.yml",
+		"oF": 0
+		},
+	"\/assets\/vendor\/awesomplete.base.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/assets\/vendor\/awesomplete.base-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/assets\/vendor\/awesomplete.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/assets\/vendor\/awesomplete-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/assets\/vendor\/awesomplete.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/vendor\/awesomplete.css.map",
+		"oF": 0
+		},
+	"\/assets\/vendor\/awesomplete.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/awesomplete-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/awesomplete.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/awesomplete.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/awesomplete.min.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/vendor\/awesomplete.min.js.map",
+		"oF": 0
+		},
+	"\/assets\/vendor\/awesomplete.theme.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/assets\/vendor\/awesomplete.theme-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/assets\/vendor\/bower.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/assets\/vendor\/bower-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/assets\/vendor\/CHANGELOG.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/CHANGELOG.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/assets\/vendor\/CONTRIBUTING.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/CONTRIBUTING.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/assets\/vendor\/gulpfile.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/gulpfile-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/vendor\/index.html",
+		"oF": 0
+		},
+	"\/assets\/vendor\/index.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/index-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/karma.conf.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/karma.conf-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/LICENSE": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/vendor\/LICENSE",
+		"oF": 0
+		},
+	"\/assets\/vendor\/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/assets\/vendor\/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/assets\/vendor\/prism\/prism.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/assets\/vendor\/prism\/prism-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/assets\/vendor\/prism\/prism.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/prism\/prism-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/assets\/vendor\/style.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/assets\/vendor\/style-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/assets\/vendor\/test\/api\/closeSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/test\/api\/closeSpec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/test\/api\/evaluateSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/test\/api\/evaluateSpec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/test\/api\/gotoSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/test\/api\/gotoSpec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/test\/api\/nextSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/test\/api\/nextSpec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/test\/api\/openedSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/test\/api\/openedSpec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/test\/api\/openSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/test\/api\/openSpec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/test\/api\/previousSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/test\/api\/previousSpec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/test\/api\/selectedSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/test\/api\/selectedSpec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/test\/api\/selectSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/test\/api\/selectSpec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/test\/events\/blurSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/test\/events\/blurSpec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/test\/events\/inputSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/test\/events\/inputSpec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/test\/events\/keydownSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/test\/events\/keydownSpec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/test\/events\/mousedownSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/test\/events\/mousedownSpec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/test\/events\/submitSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/test\/events\/submitSpec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/test\/fixtures\/options.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/vendor\/test\/fixtures\/options.html",
+		"oF": 0
+		},
+	"\/assets\/vendor\/test\/fixtures\/plain.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/vendor\/test\/fixtures\/plain.html",
+		"oF": 0
+		},
+	"\/assets\/vendor\/test\/helpers\/bindSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/test\/helpers\/bindSpec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/test\/helpers\/createSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/test\/helpers\/createSpec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/test\/helpers\/dollarSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/test\/helpers\/dollarSpec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/test\/helpers\/doubleDollarSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/test\/helpers\/doubleDollarSpec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/test\/helpers\/fireSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/test\/helpers\/fireSpec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/test\/helpers\/regExpEscapeSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/test\/helpers\/regExpEscapeSpec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/test\/init\/htmlSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/test\/init\/htmlSpec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/test\/init\/listSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/test\/init\/listSpec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/test\/init\/optionsSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/test\/init\/optionsSpec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/test\/specHelper.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/test\/specHelper-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/test\/static\/allSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/test\/static\/allSpec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/test\/static\/dataSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/test\/static\/dataSpec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/test\/static\/filterContainsSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/test\/static\/filterContainsSpec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/test\/static\/filterStartsWithSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/test\/static\/filterStartsWithSpec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/test\/static\/itemSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/test\/static\/itemSpec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/test\/static\/replaceSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/test\/static\/replaceSpec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/vendor\/test\/static\/sortByLengthSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/vendor\/test\/static\/sortByLengthSpec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,
