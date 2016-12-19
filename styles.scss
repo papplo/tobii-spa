@@ -40,6 +40,12 @@ p {
   }
 }
 
+@media (max-width: 481px) {
+  .caption span {
+      float: right;
+  }
+}
+
 @media (min-width: 481px) {
 
   .games_grid{
@@ -86,6 +92,7 @@ p {
         transition: opacity .25s ease-in;
         -moz-transition: opacity .25s ease-in;
         -webkit-transition: opacity .25s ease-in;
+
       }
 
       & .tag {
@@ -115,11 +122,28 @@ p {
 
  input {
    font-family: Monaco, Consolas, Courier, monospace;
-   font-size: 1.5em;
+   font-size: 1em;
+   width: 100%;
    line-height: 1.8em;
    color: #fff;
    background-color: #8DA1BD;
  }
+
+ ::-webkit-input-placeholder {
+   color: #000;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #000;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #000;
+}
+
+:-ms-input-placeholder {
+   color: #000;
+}
 
  .awesomplete [hidden] {
      display: none;

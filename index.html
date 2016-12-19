@@ -25,10 +25,8 @@ Reply us with the result in a zip file and how to run your code. Feel free to di
 
 <!-- Search -->
 <section>
-  <form>
-    <input id="search_input" type="text" name="search" class="awesomplete" data-list="fp, shooter, free, adventure, sneaker, platform, gravity, reality, space, immersive, 3d, new" /></input>
-
-
+  <form name="searchfilter">
+    <input id="search_input" type="text" name="search" placeholder="Search by tags, eg New, free, fp, shooter.. " class="awesomplete" data-list="fp, shooter, free, adventure, sneaker, platform, gravity, reality, space, immersive, 3d, new" /></input>
   </form>
 
 </section>
@@ -65,12 +63,6 @@ Reply us with the result in a zip file and how to run your code. Feel free to di
   </div>
 </section>
 
-
-
-
-
-
-
 </body>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="assets/vendor/awesomplete.js" async></script>
@@ -83,12 +75,19 @@ $('.grid_cell img').each(function() {
     $(this).after( cap );
 });
 
-// Search/filter grid images based on their classes, todo: reset filtering
-$('input.awesomplete').on('awesomplete-selectcomplete',function(e){
-    tag_class = (this.value);
-    $('.grid_cell .' + tag_class).parent().fadeToggle("fast");
+$(document).ready(function(event) {
+  // cancel form request for now
+  $('form[name=searchfilter]').submit(function(event){
+      event.preventDefault();
+    });
+
+  // Search/filter grid images based on their classes, todo: reset filtering
+  $('input.awesomplete').on('awesomplete-selectcomplete',function(){
+      tag_class = '.' + this.value
+      $("img").not(tag_class).parent().fadeToggle("fast");
+  });
+
 });
+
 </script>
-
-
 </html>

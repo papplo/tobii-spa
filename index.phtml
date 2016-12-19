@@ -4,7 +4,7 @@
   <meta charset=utf-8>
     <link rel="stylesheet" href="styles.css">
     <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1">
-    <title>T-spa Fun n´ games</title>
+    <title>T-spa Fun n´ games - Populated from Json Array</title>
 </head>
 <body>
 
@@ -23,63 +23,66 @@ Reply us with the result in a zip file and how to run your code. Feel free to di
 
 -->
 
+<!-- Search -->
+<section>
+  <form name="searchfilter">
+    <input id="search_input" type="text" name="search" placeholder="Search by tags, eg New, free, fp, shooter.. " class="awesomplete" data-list="fp, shooter, free, adventure, sneaker, platform, gravity, reality, space, immersive, 3d, new" /></input>
+  </form>
 
-<!-- Grid based on html and css -->
-
-<!--<article class="h33">
-  <header>
-    <p>hello world of gaming </p>
-    <p>Inbox is an awesome new email client from the Gmail team. I’ve had the pleasure of test-driving this for a few months, and I have to say: It’s an incredibly well-polished app with a very smart set of features.</p>
-    <p>It combines everything I like about Gmail, Mail.app, and Mailbox app, removes the features I don’t use, and absolutely shines as an example of Material Design.</p>
-    <p>I also love the fact that Google’s not just positioning it as “The Next Gmail,” but rather as an all new product—and it looks like it will be supporting a variety of other email services as well.</p>
-    <p>Really tremendous work and a huge congrats to all my colleagues that took part in shipping this.</p>
-  </header>
-</article>
--->
-<section class="games_grid">
-  <div class="grid_cell h33">
-    <img src="assets/img/WD2_Thumb.jpg" title="Game-Title" class="fp shooter free new" >
-  </div>
-  <div class="grid_cell h33">
-    <img src="assets/img/SteepThumbnail.jpg" title="Game-Title" class="fp shooter free new" >
-  </div>
-  <div class="grid_cell h33">
-    <img src="assets/img/Games_Thumbnails_Division-1.jpg"  title="Game-Title" class="fp shooter free new" >
-  </div>
-  <div class="grid_cell h33">
-    <img src="assets/img/ACSThumb169.png"  title="Game-Title" class="fp shooter free new" >
-  </div>
-  <div class="grid_cell h33">
-    <img src="assets/img/ElitDangerousThumbnail.png"  title="Game-Title" class="fp shooter free new" >
-  </div>
-  <div class="grid_cell h33">
-    <img src="assets/img/DX_thumb620.jpg"  title="Game-Title" class="fp shooter free new" >
-  </div>
-  <div class="grid_cell h33">
-    <img src="assets/img/Games_Thumbnails_SolusProject169.jpg" title="Game-Title" class="fp shooter free new"  >
-  </div>
-  <div class="grid_cell h33">
-    <img src="assets/img/FarmingSimulator_thumb.jpg" title="Game-Title" class="fp shooter free new"  >
-  </div>
-  <div class="grid_cell h33">
-    <img src="assets/img/Pollen-capsule_main-featureimage.png"  title="Game-Title" class="fp shooter free new" >
-  </div>
 </section>
 
+<!-- Grid based on flexbox -->
+<section id="games_container" class="games_grid">
+<?php
+    //Array could be fetched from endpoint url or db
+    $gamesData = '[
+        {"game":"Watch Dogs 2", "img":"WD2_Thumb.jpg", "tags":"fp shooter new"},
+        {"game":"Steep", "img":"SteepThumbnail.jpg", "tags":"fp adventure new"},
+        {"game":"The Division","img":"Games_Thumbnails_Division-1.jpg","tags":"fp shooter free"},
+        {"game":"Assasins Creed","img":"ACSThumb169.png","tags":"fp sneaker free"},
+        {"game":"Elite Dangerous","img":"ElitDangerousThumbnail.png","tags":"platform shooter free"},
+        {"game":"Deus Ex","img":"ElitDangerousThumbnail.png","tags":"platform shooter new"},
+        {"game":"Solus Project", "img":"Games_Thumbnails_SolusProject169.jpg", "tags":"gravity 3d space new"},
+        {"game":"Farming Simulator","img":"FarmingSimulator_thumb.jpg", "tags":"fp reality immersive"},
+        {"game":"Pollen","img":"Pollen-capsule_main-featureimage.png", "tags":"fp immersive new"}
+      ]';
 
-
-
-
+      // Loop it real good "true" sets array as opposed to object
+      $gamesArr = json_decode($gamesData, true);
+      foreach ($gamesArr as $key => $value) {
+        echo '<div class="grid_cell">';
+        echo '<img src="assets/img/'.$value["img"].'" title="' . $value["game"] . '" class="' . $value["tags"] . '">';
+        echo '</div>';
+      }
+ ?>
+</section>
 
 
 </body>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
+<script src="assets/vendor/awesomplete.js" async></script>
 <script type="text/javascript">
+
+// Create caption and tags from <img> attributes
 $('.grid_cell img').each(function() {
-    cap = '<div class="caption">'+ $(this).attr('title')+'</div>';
+    tags = '<span class="tag">'+ $(this).attr('class') + '</span>';
+    cap = '<div class="caption">'+ $(this).attr('title') + tags +'</div>';
     $(this).after( cap );
 });
-</script>
 
+$(document).ready(function(event) {
+  // cancel form request for now
+  $('form[name=searchfilter]').submit(function(event){
+      event.preventDefault();
+    });
+
+  // Search/filter grid images based on their classes, todo: reset filtering
+  $('input.awesomplete').on('awesomplete-selectcomplete',function(){
+      tag_class = '.' + this.value
+      $("img").not(tag_class).parent().fadeToggle("fast");
+  });
+
+});
+
+</script>
 </html>
