@@ -9,6 +9,12 @@
 	],
 "creatorBuild": "25444",
 "files": {
+	"\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.gitignore",
+		"oF": 0
+		},
 	"\/assets\/img\/ACSThumb169.png": {
 		"ft": 32768,
 		"iS": 116587,
@@ -652,6 +658,12 @@
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
+		},
+	"\/Tobii-spa-Pablo_Anttila.zip": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/Tobii-spa-Pablo_Anttila.zip",
+		"oF": 0
 		}
 	},
 "hooks": [
